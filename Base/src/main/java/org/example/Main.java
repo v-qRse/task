@@ -1,25 +1,25 @@
 package org.example;
 
 public class Main {
-   private final static int Length_Rectangle = 5;
-   private final static int Wight_Rectangle = 3;
-   private final static char Char_Star = '*';
+   private final static int lengthRectangle = 5;
+   private final static int wightRectangle = 3;
+   private final static char charStar = '*';
 
    public static void main(String[] args) {
-      printSequenceMultiplySevenMultiplier();
-      printMaximumAndMeanRandomValues();
+      printSequence();
+      printMaximumAndMeanArray();
       printPrimeNumbers();
-      printRectangleFromStars();
+      printStars();
    }
 
-   private static void printSequenceMultiplySevenMultiplier() {
+   private static void printSequence() {
       for (int multiplier = 1; multiplier <= 14; multiplier++){
          System.out.print(7*multiplier + " ");
       }
       System.out.println();
    }
 
-   private static void printMaximumAndMeanRandomValues() {
+   private static void printMaximumAndMeanArray() {
       double[] arrayRandomValues = new double[30];
       double maxValuesArray = 0;
       double sumValuesArray = 0;
@@ -45,10 +45,10 @@ public class Main {
       }
    }
 
-   private static void printRectangleFromStars() {
-      for (int wight = 0; wight < Wight_Rectangle; wight++) {
-         for (int length = 0; length < Length_Rectangle; length++) {
-            System.out.print(Char_Star + " ");
+   private static void printStars() {
+      for (int wight = 0; wight < wightRectangle; wight++) {
+         for (int length = 0; length < lengthRectangle; length++) {
+            System.out.print(charStar + " ");
          }
          System.out.println();
       }
